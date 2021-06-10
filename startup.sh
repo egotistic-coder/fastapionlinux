@@ -1,1 +1,1 @@
-gunicorn --config gunicorn.py main:app
+gunicorn -w 2 -k uvicorn.workers.UvicornWorker main:app
